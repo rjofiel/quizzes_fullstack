@@ -1,0 +1,48 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #eba63e;
+}
+a:hover{
+  color: #e27720;
+}
+
+.menu_container{
+  list-style: none;
+  display: flex;
+  padding: 0px;
+}
+
+.menu_container li {
+  margin-right: 0.5rem;
+}
+
+
+.skills{
+  color: #e27720;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+main{
+  margin: 1.25rem 0rem;
+}
+
+.div-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-container img {
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.div-container p {
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+<section>
+    <h2>Lista de Quizzes</h2>
+    <% quizzes.forEach(function(quizz){ %>
+        <p>
+            <%= quizz.dataValues.question %>: <%= quizz.dataValues.answer %>
+        </p>
+        <% }); %>
+</section>

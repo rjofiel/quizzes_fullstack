@@ -1,0 +1,10 @@
+node_modules
+*/node_modules
+package-lock.json
+yarn.lock
+data/    
+*/package-lock.json
+*/yarn.lock
+*/data
+*/*.zip
+*.zip

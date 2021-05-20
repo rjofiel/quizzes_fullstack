@@ -1,0 +1,15 @@
+{
+    "name": "MOOC_quiz_mod4-randomplay_entrega",
+    "author": "ging-moocs",
+    "license": "GNU",
+    "version": "0.1.7",
+    "info": {
+        "githubURL": "ging-moocs/MOOC_quiz_mod4-randomplay_entrega",
+        "serverUrl": "https://autocorector.dit.upm.es/",
+        "courseId": "4",
+        "assignmentId": "7"
+    },
+    "dependencies": {
+        "nodegit": "^0.26.5"
+    }
+}

@@ -1,0 +1,41 @@
+<section class="right">
+    Login with:
+
+    <%- loginWithGitHub   ? '<a href="/auth/github"><img src="/images/login/github.png" class="loginicon" alt="GitHub"></a>' : "" %>
+    <%- loginWithTwitter  ? '<a href="/auth/twitter"><img src="/images/login/twitter.png" class="loginicon" alt="Twitter"></a>' : "" %>
+    <%- loginWithGoogle   ? '<a href="/auth/google"><img src="/images/login/google.png" class="loginicon" alt="Google"></a>' : "" %>
+    <%- loginWithLinkedin ? '<a href="/auth/linkedin"><img src="/images/login/linkedin.png" class="loginicon" alt="Linkedin"></a>' : "" %>
+</section>
+
+<section>
+
+    <h1>Login</h1>
+
+    <form method='POST' action='/login'>
+
+        <div>
+            <label for="login">Login:</label>
+            <br/>
+            <input type="text" id="username" name="username" size="30" autocomplete="off"/>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <br/>
+            <input type="password" id="password" name="password" size="30" autocomplete="off"/>
+        </div>
+
+        <div>
+            <input name="commit" type="submit" value="Login"/>
+        </div>
+
+    </form>
+
+    <hr />
+
+    <% if (!!process.env.QUIZ_OPEN_REGISTER) { %>
+        <div>
+            <a href="/users/new">Register local account</a>
+        </div>
+    <% } %>
+</section>
